@@ -9,8 +9,7 @@ module Spleat
           venues[venue_id] = Hash.new() if venues[venue_id] == nil
           venues[venue_id][:payments] = Hash.new() if venues[venue_id][:payments] == nil
           venues[venue_id][:payments][payment.id] = payment.value
-          binding.pry
-          venues[venue_id][:venue_name] = payment.user_tab.tab.venue.name if venues[venue_id][:venue_name] == nil
+          venues[venue_id][:name] = payment.user_tab.tab.venue.name if venues[venue_id][:name] == nil
         end
         venues
       end
