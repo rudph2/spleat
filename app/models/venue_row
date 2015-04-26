@@ -1,3 +1,0 @@
-class VenueRow
-  attr_accessor :name, :transactions, :value
-end
