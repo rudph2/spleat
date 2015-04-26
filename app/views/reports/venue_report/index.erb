@@ -1,0 +1,17 @@
+<h1>Venues</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Transactions</th>
+    <th>Value</th>
+  </tr>
+
+  <% @report.each do |venue_row| %>
+      <tr>
+        <td><%= venue_row.name %></td>
+        <td><%= venue_row.transactions %></td>
+        <td><%= venue_row.value %></td>
+      </tr>
+  <% end %>
+</table>
