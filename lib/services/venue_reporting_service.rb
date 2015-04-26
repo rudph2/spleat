@@ -1,3 +1,5 @@
+require 'pry'
+
 module Spleat
   module Services
     class VenueReportingService
@@ -11,8 +13,9 @@ module Spleat
 
         report_data = []
 
-        list_of_venues.each do |venue|
-          venue_row = ::Spleat::Models::VenueRow.new
+        list_of_venues.values.each do |venue|
+
+          venue_row = ::Spleat::Dto::VenueRow.new
 
           venue_row.name = venue[:name]
           venue_row.transactions = venue[:payments].count

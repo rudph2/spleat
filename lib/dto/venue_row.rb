@@ -1,5 +1,5 @@
 module Spleat
-  module Models
+  module Dto
     class VenueRow
       attr_accessor :name, :transactions, :value
     end

@@ -26,8 +26,8 @@ tabs.each { |tab| Tab.create!(name: tab[:name], venue: tab[:venue]) }
 
 
 user_tabs = [{user: User.first, tab: Tab.first},
-             {user: User.second, tab: Tab.first},
-             {user: User.third, tab: Tab.second}]
+             {user: User.second, tab: Tab.second},
+             {user: User.third, tab: Tab.third}]
 
 user_tabs.each { |user_tab| UserTab.create!(user: user_tab[:user], tab: user_tab[:tab]) }
 
